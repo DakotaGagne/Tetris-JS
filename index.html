@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Tetris</title>
+		<meta charset="utf-8">
+		<meta name='viewport' content='maximum-scale=1.0, user-scalable=0' />
+		<link href='styles/main.css' rel='stylesheet'>
+
+	</head>
+
+
+	<body onload='init()' class='no-tap-zoom'>
+		<canvas id='canvas' class='no-tap-zoom'>Your browser doesn't support canvas. Please use chrome, opera, or firefox.</canvas>
+		<div id='mainWrapper' class='container'>
+			<div id='menuWrapper'>
+				<button id='resume' class='menuBtn' onclick='resume()'>Resume</button>
+				<button id='restart' class='menuBtn' onclick='restart()'>Restart</button>
+				<button id='extraBlocks' class='menuBtn' onclick='toggleExtra()'>Extra Blocks: Off</button>
+				<button id='help' class='menuBtn' onclick='help()'>Help</button>
+				<button id='home' class='menuBtn'><a href='../'>Home</a></button>
+			</div>
+		</div>
+		<script src='js/init.js'></script>
+		<script src='js/main.js'></script>
+		<script src='js/blocks.js'></script>
+		<script src='js/text.js'></script>
+	</body>
+</html> 

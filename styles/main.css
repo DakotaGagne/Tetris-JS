@@ -1,0 +1,60 @@
+body{
+	overflow: hidden;
+}
+canvas{
+	top:0;
+	left:0;
+	position:fixed;
+	width:100vw;
+	height:100vh;
+	z-index: 0;
+}
+
+#mainWrapper{
+	left:0;
+	width:100vw;
+	top:0;
+	height:100vh;
+	position:absolute;
+	text-align:center;
+	z-index:2;
+}
+
+#menuWrapper{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	height:60%;
+	top:40%;
+	position:relative;
+
+}
+
+.menuBtn{
+	color: white;
+	background: #0D0116;
+	text-align:center;
+	position:relative;
+	height:40%;
+	width:15%;
+	left:42.5%;
+	font-size:120%;
+	font-weight: 700;
+	outline:none;
+	z-index:0;
+	border-radius:10%;
+	text-decoration: none;
+}
+
+a{
+	color:white;
+	text-decoration: none;
+}
+
+.menuBtn:hover{
+	font-size:130%;
+
+}
+
+.no-tap-zoom{
+	touch-action:none;
+}
